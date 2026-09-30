@@ -1,4 +1,9 @@
-let geschaeftsstellePLZ = "45525";
+const GESCHAEFTSSTELLE = {
+  name: "Geschäftsstelle",
+  strasse: "Musterstraße 1",
+  plz: "45525",
+  ort: "Hattingen"
+};
 
 let radioGeschaeftsstelle = document.querySelector("#artGeschaeftsstelle");
 let radioAbholung = document.querySelector("#artAbholung");
@@ -13,7 +18,7 @@ radioAbholung.onclick = function () {
 };
 
 function plzPasst(plz) {
-  return plz.substring(0, 2) === geschaeftsstellePLZ.substring(0, 2);
+  return plz.substring(0, 2) === GESCHAEFTSSTELLE.plz.substring(0, 2);
 }
 
 document.querySelector("#spendeForm").onsubmit = function (event) {
@@ -56,7 +61,8 @@ document.querySelector("#spendeForm").onsubmit = function (event) {
           document.querySelector("#plz").value + " " +
           document.querySelector("#ort").value;
   } else {
-    ort = "Geschäftsstelle, Webstraße 12, 45525 Hattingen";
+    ort = GESCHAEFTSSTELLE.name + ", " + GESCHAEFTSSTELLE.strasse + ", " +
+          GESCHAEFTSSTELLE.plz + " " + GESCHAEFTSSTELLE.ort;
   }
 
   let jetzt = new Date();
