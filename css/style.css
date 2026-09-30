@@ -1,9 +1,11 @@
-html, body {
-  height: 100%; /* volle Höhe des Bildschirms*/
+/* Seite mindestens so hoch wie der Bildschirm, aber mit dem Inhalt wachsend */
+body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* main nimmt den restlichen Platz ein, dadurch rutscht der Footer nach unten */
 main {
-  flex-grow: 1 0 auto; /* dynamisch ausdehnen gesamte restliche PLatz, der noch übrig ist. Dadurch Footer ganz an das untere Ende*/
+  flex: 1 0 auto;
 }
