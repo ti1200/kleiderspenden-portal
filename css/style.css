@@ -1,0 +1,9 @@
+html, body {
+  height: 100%; /* volle Höhe des Bildschirms*/
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1 0 auto; /* dynamisch ausdehnen gesamte restliche PLatz, der noch übrig ist. Dadurch Footer ganz an das untere Ende*/
+}
