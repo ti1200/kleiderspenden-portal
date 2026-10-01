@@ -64,19 +64,18 @@
               <div class="mb-3">
                 <label for="strasse" class="form-label">Straße und Hausnummer</label>
                 <input type="text" class="form-control" name="strasse" id="strasse">
+                <div class="invalid-feedback"></div>
               </div>
               <div class="mb-3">
                 <label for="plz" class="form-label">Postleitzahl</label>
                 <input type="text" class="form-control" name="plz" id="plz" maxlength="5">
                 <div class="form-text">Die ersten beiden Ziffern müssen mit unserer PLZ (45525) übereinstimmen.</div>
+                <div class="invalid-feedback"></div>
               </div>
               <div class="mb-3">
                 <label for="ort" class="form-label">Ort</label>
                 <input type="text" class="form-control" name="ort" id="ort">
-              </div>
-              
-              <div id="plzFehler" class="alert alert-danger" style="display: none;">
-                Diese Adresse liegt leider außerhalb unseres Abholgebiets.
+                <div class="invalid-feedback"></div>
               </div>
             </div>
 
@@ -97,6 +96,7 @@
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="kleiderart" value="Schuhe" id="schuhe">
                 <label class="form-check-label" for="schuhe">Schuhe</label>
+                <div class="invalid-feedback" id="kleiderFehler">Bitte wähle mindestens eine Kleiderart aus.</div>
               </div>
             </div>
 
@@ -109,6 +109,7 @@
                 <option>Horn von Afrika</option>
                 <option>Gazastreifen</option>
               </select>
+              <div class="invalid-feedback"></div>
             </div>
 
             <button type="submit" class="btn btn-primary w-100">Spende registrieren</button>
