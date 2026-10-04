@@ -125,6 +125,14 @@ document.querySelector("#spendeForm").onsubmit = function (event) {
     bestaetigungListe.appendChild(li);
   }
 
+  let uebergabeArt;
+  if (istAbholung) {
+    uebergabeArt = "Abholung durch das Sammelfahrzeug";
+  } else {
+    uebergabeArt = "Persönliche Übergabe an der Geschäftsstelle";
+  }
+  
+  erstelleListenElement("Übergabeart", uebergabeArt);
   erstelleListenElement("Art der Kleidung", kleiderArten.join(", "));
   erstelleListenElement("Krisengebiet", krisengebiet);
   erstelleListenElement("Datum", jetzt.toLocaleDateString("de-DE"));
