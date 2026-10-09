@@ -3,10 +3,10 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Timo Bornemann">
     <title>Kleiderspende registrieren</title>
-   <!--Bootstrap 5 als CSS-Framework-->
+    <!--Bootstrap 5 als CSS-Framework-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,7 +18,7 @@
       <div class="container d-flex flex-wrap justify-content-between align-items-center">
         <!-- Container für Logo und Titel nebeneinander, mittig ausgerichtet-->
         <div class="d-flex align-items-center mb-2 mb-md-0 text-white text-decoration-none">
-        <!--Logo als SVG-->
+          <!--Logo als SVG-->
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-seam me-2" viewBox="0 0 16 16">
             <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM2.623 3.836l2.377-.951 6.5 2.6-2.377.951z"/>
           </svg>
@@ -55,7 +55,6 @@
               <input class="form-check-input" type="radio" name="uebergabeArt" id="artGeschaeftsstelle" value="geschaeftsstelle" checked>
               <label class="form-check-label" for="artGeschaeftsstelle">Persönliche Übergabe an der Geschäftsstelle</label>
             </div>
-
             <div class="form-check mb-4">
               <input class="form-check-input" type="radio" name="uebergabeArt" id="artAbholung" value="abholung">
               <label class="form-check-label" for="artAbholung">Abholung durch das Sammelfahrzeug</label>
@@ -68,14 +67,12 @@
                 <input type="text" class="form-control" name="strasse" id="strasse">
                 <div class="invalid-feedback"></div>
               </div>
-
               <div class="mb-3">
                 <label for="plz" class="form-label">Postleitzahl</label>
                 <input type="text" class="form-control" name="plz" id="plz" maxlength="5">
                 <div class="form-text">Die ersten beiden Ziffern müssen mit unserer PLZ (45525) übereinstimmen.</div>
                 <div class="invalid-feedback"></div>
               </div>
-
               <div class="mb-3">
                 <label for="ort" class="form-label">Ort</label>
                 <input type="text" class="form-control" name="ort" id="ort">
@@ -89,25 +86,21 @@
                 <input class="form-check-input" type="checkbox" name="kleiderart" value="Damenkleidung" id="damen">
                 <label class="form-check-label" for="damen">Damenkleidung</label>
               </div>
-
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="kleiderart" value="Herrenkleidung" id="herren">
                 <label class="form-check-label" for="herren">Herrenkleidung</label>
               </div>
-
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="kleiderart" value="Kinderkleidung" id="kinder">
                 <label class="form-check-label" for="kinder">Kinderkleidung</label>
               </div>
-
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="kleiderart" value="Schuhe" id="schuhe">
                 <label class="form-check-label" for="schuhe">Schuhe</label>
               </div>
-
               <div class="invalid-feedback" id="kleiderFehler">Bitte wähle mindestens eine Kleiderart aus.</div>
             </div>
-            
+
             <h2 class="h5 mb-3">4. Krisengebiet</h2>
             <div class="mb-4">
               <select class="form-select" name="krisengebiet" id="krisengebiet">
