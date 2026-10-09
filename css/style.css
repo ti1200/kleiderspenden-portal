@@ -1,11 +1,11 @@
-/* Seite mindestens so hoch wie der Bildschirm, aber mit dem Inhalt wachsend */
+/*Seite mindestens so hoch wie der Bildschirm, aber mit dem Inhalt wachsend*/
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* main nimmt den restlichen Platz ein, dadurch rutscht der Footer nach unten */
+/*main nimmt den restlichen Platz ein, dadurch rutscht der Footer nach unten*/
 main {
   flex: 1 0 auto;
 }
